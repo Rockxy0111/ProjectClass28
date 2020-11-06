@@ -25,9 +25,9 @@ function setup() {
   
     boy=new Boy(300,486,150,220)
   
-   stoneobj=new Stone(240,448,25)
+   stoneobj=new Stone(240,435,25)
 
-   rope=new Target(stoneobj.body,{x:240,y:432})
+   rope=new Target(stoneobj.body,{x:240,y:435})
 
    tree=new Tree(1300,400,450,400)
 
@@ -78,7 +78,7 @@ function mouseReleased(){
 
 function keyPressed(){
   if(keyCode === 32){
-    Matter.Body.setPosition(stoneobj.body,{x:240,y:450})
+    Matter.Body.setPosition(stoneobj.body,{x:240,y:435})
       rope.attach(stoneobj.body);
   }
 }
